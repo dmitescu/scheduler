@@ -4,8 +4,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/rakanalh/scheduler"
-	"github.com/rakanalh/scheduler/storage"
+	"github.com/dmitescu/scheduler"
+	"github.com/dmitescu/scheduler/storage"
 )
 
 func TaskWithoutArgs() {
