@@ -19,12 +19,11 @@ func TaskWithArgs(message string) {
 func main() {
 	storage := storage.NewMongoDBStorage(
 		storage.MongoDBConfig{
-			HostName: "127.0.0.1",
-			Port:     27017,
-			Db:       "dbname",
+			ConnectionUrl: "mongodb://localhost/example",
+			Db:            "example",
 		},
 	)
-	
+
 	if err := storage.Connect(); err != nil {
 		log.Fatal("Could not connect to db", err)
 	}
